@@ -61,10 +61,14 @@ Use the inning function below to do the following:
   
 NOTE: This will be a callback function for the tasks below
 */
+const inning = () => Math.round(Math.random() * 2)
 
-function inning(/*Code Here*/){
-    /*Code Here*/
-}
+// function inning(/*Code Here*/){
+//   let score = 0;
+//   return function inningScore() {
+//     console.log(score + Math.round(Math.random() * 2))
+//   }
+// }
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️

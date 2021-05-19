@@ -64,9 +64,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+  Closure happens with anon func reaches outside the scope to grab the name variable
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  the newroll will always be the same but the actual name will change.
+
+c. What is the lexical scope of `newRoll`? 
+    newRoll scope is inside the anon function
 
 ### Task 3 - Stretch Goals
 
