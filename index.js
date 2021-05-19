@@ -67,7 +67,7 @@ const inning = () => Math.round(Math.random() * 2)
 //   let score = 0;
 //   return function inningScore() {
     // console.log(score + Math.round(Math.random() * 2))
-//     score + Math.round(Math.random() * 2)
+//     return score + Math.round(Math.random() * 2)
 //   }
 // }
 
@@ -86,15 +86,15 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(innings){
+function finalScore(inning, inn){
   let score = {
     'Away': 0,
     'Home': 0,
   }
-  while (innings > 0) {
+  while (inn > 0) {
     score.home += inning()
     score.away += inning()
-    innings--
+    inn--
   }
   return score;
 }
@@ -104,8 +104,12 @@ Use the getInningScore() function below to do the following:
   1. Receive a callback function - you will pass in the inning function from task 2 as your argument 
   2. Return an object with a score for home and a score for away that populates from invoking the inning callback function */
 
-function getInningScore(/*Your Code Here */) {
-  /*Your Code Here */
+function getInningScore(inning) {
+  return {
+    "Home" : inning(),
+    "Away" : inning(),
+  }
+  
 }
 
 
