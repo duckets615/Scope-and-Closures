@@ -66,7 +66,8 @@ const inning = () => Math.round(Math.random() * 2)
 // function inning(/*Code Here*/){
 //   let score = 0;
 //   return function inningScore() {
-//     console.log(score + Math.round(Math.random() * 2))
+    // console.log(score + Math.round(Math.random() * 2))
+//     score + Math.round(Math.random() * 2)
 //   }
 // }
 
@@ -85,8 +86,17 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore(innings){
+  let score = {
+    'Away': 0,
+    'Home': 0,
+  }
+  while (innings > 0) {
+    score.home += inning()
+    score.away += inning()
+    innings--
+  }
+  return score;
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
